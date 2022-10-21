@@ -60,7 +60,8 @@ def d():
     s=""
     l1.configure(text=s1)
     boo=1
-    
+
+#Multiply
 def m():
     global s
     global s1
@@ -81,6 +82,7 @@ def m():
     l1.configure(text=s1)
     boo=1
     
+#Addition
 def a():
     global s
     global s1
@@ -100,7 +102,8 @@ def a():
     s=""
     l1.configure(text=s1)
     boo=1
-    
+
+#Subtraction
 def sb():
     global s
     global s1
@@ -121,6 +124,7 @@ def sb():
     l1.configure(text=s1)
     boo=1
 
+#Decimal point
 def xd():
     global s
     global s1
@@ -131,6 +135,8 @@ def xd():
         l0.configure(text=s)
         l1.configure(text=s1)
 
+
+#Functions for number buttons
 def b1():
     global s
     global s1
@@ -282,7 +288,7 @@ def eq():
         
     
   
-    
+#Configuring colors of buttons on hover, click and release
 def bx1(e):
     bb1.configure(bg="#d1d1d1")
     b1()
@@ -464,7 +470,7 @@ def byysc(e):
     
 
 
-
+#UI
 
 w=Tk()
 w.configure(bg="#e86f6e")
@@ -520,7 +526,7 @@ bb0.grid(column=0,row=8,columnspan=2,sticky="news")
 bbx.grid(column=2,row=8,sticky="news")
 bbe.grid(column=3,row=8,sticky="news")
 
-
+#Keybindings
 w.bind('1', bx1)
 w.bind('<KeyRelease-1>',bxx1)
 bb1.bind('<Leave>',bxx1)
@@ -640,7 +646,7 @@ w.bind('<KeyRelease-Delete>',bxxxx)
 bbAC.bind('<Enter>',byyAC)
 bbAC.bind('<Leave>',bxxxx)
 
-
+#Uniform scaling of buttons accross the app
 w.resizable(False, False)
 w.grid_rowconfigure(0,weight=1)
 w.grid_rowconfigure(1,weight=1)
