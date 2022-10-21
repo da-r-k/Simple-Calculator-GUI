@@ -7,6 +7,7 @@ s1=""
 x=""
 boo=0
 
+#Clear All
 def AC():
     global s
     global s1
@@ -17,6 +18,7 @@ def AC():
     l0.configure(text="0")
     l1.configure(text="")
 
+#Sign Change
 def sc():
     global s
     global s1
@@ -27,6 +29,7 @@ def sc():
     l0.configure(text=s)
     l1.configure(text=s1)
 
+#Percentage
 def p():
     global s
     global s1
@@ -36,7 +39,8 @@ def p():
     s=str((float(s))/100)
     l0.configure(text=s)
     l1.configure(text=s1)
-    
+
+#Division
 def d():
     global s
     global s1
